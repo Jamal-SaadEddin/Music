@@ -1,0 +1,254 @@
+@import "./normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-size: 62.5%;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    background: url(../images/1EnglishMode.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    margin-left: 120px;
+  }
+  
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  h1{
+    width: 100px;
+    font-family: 'Anton', sans-serif;
+    font-size: 75px;
+    line-height: 1.1;
+    font-weight: 100;
+    margin-bottom: 0;
+  }
+
+  p{
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  button{
+    padding: 0.8rem 5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: small;
+    letter-spacing: 0.3rem;
+    color: #122a7a;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.27s;
+  }
+  button:hover{
+    color: #fff;
+    background: #003cff;
+  }
+
+.nav{
+    margin-top: 70px;
+}
+
+.nav_list{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 0;
+}
+.nav_list ::placeholder{
+    text-align: center;
+    color: #4057eb;
+    margin-left: -50px;
+}
+
+.icon{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 150px;
+    margin-top: -0.1rem;
+    color: #4057eb;
+}
+
+.input{
+    position: absolute;
+    border-radius: 50px;
+    border: 0;
+    height: 2.7rem;
+    width: 13rem;
+    padding-left: 1.5rem;
+    padding-right: 4rem;
+    top: -5px;
+}
+.list_item{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.list_item:last-child{
+    margin-left: -20px;
+}
+.list_item::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    bottom: -3px;
+    left: 0;
+    background-color: #fff;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+    border-radius: 50px;
+}
+.list_item:first-child::before{
+    transform: scaleX(1);
+}
+.list_item:hover::before{
+    transform: scaleX(1);
+    transform-origin: center;
+}
+
+.container{
+    display: grid;
+    
+}
+
+.grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid--1x3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    gap: 1.5rem;
+  }
+
+.account_item{
+    display: flex;
+    position: relative;
+    top: 11rem;
+    width: fit-content;
+    gap: 0.5rem;
+    height: fit-content;
+}
+.account_item > p{
+    line-height: 0.9;
+    font-size: 1.1rem;
+    margin-top: 0.2rem;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.account_item_icon{
+    width: fit-content;
+    height: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.account_item4{
+  position: relative;
+  top: 10.7rem;
+  bottom: 0;
+  height: fit-content;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  width: fit-content;
+  
+}
+.account_item4 > h3{
+  margin: 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.account_item5{
+  text-transform: uppercase;
+  width :100%;
+  margin-top: 2.5rem;
+}
+
+.account_item5 > h4{
+    font-size: 2.2rem;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    text-align: end;
+    width: 90%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.account_item5 > p{
+    font-size: 1.1rem;
+    text-align: end;
+    position: relative;
+    width: 50%;
+    left: 40%;
+}
+
+.Page:nth-child(2){
+  display: none;
+}
+.Page:nth-child(2) > .nav .list_item:nth-child(n){
+  transform: rotateY(180deg);
+}
+.Page:nth-child(2) > .nav .list_item:last-child{
+  transform: rotateY(0deg);
+}
+
+.Page:nth-child(2) > .nav .list_item .input{
+  transform: rotateY(180deg);
+  text-align: end;
+  padding-left: 4rem;
+  width: 13rem;
+  padding-right: 1.5rem;
+}
+.Page:nth-child(2) > .nav .list_item .icon{
+  transform: rotateY(180deg);
+}
+.Page:nth-child(2) > .nav .list_item:last-child ::placeholder{
+  transform: rotateY(0deg);
+  margin-left: 0;
+  margin-right: 50px;
+}
+.ar_content > *{
+  transform: rotateY(180deg);
+}
+.ar_content > h1{
+  width: 230px;
+  text-align: end;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.ar_content > button{
+  letter-spacing: 0.1rem;
+}
+.ar_content > h4,.ar_content > p{
+  text-align: left;
+}
+.ar_content > p{
+  text-align: end;
+}
