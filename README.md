@@ -3,7 +3,7 @@
 ![image](https://github.com/Jamal-SaadEddin/music/assets/104212352/7c135426-af0e-4bfb-a6e6-cd9044bc3535)
 
 
-This project is a simple implementation of converting a PSD design into a functional HTML and CSS landing page. It showcases my skills in web development and design, and it was one of my early projects in web development.
+This project is a simple implementation of converting a PSD design into a functional HTML and CSS landing page, also it's a try to make a website with two languages (Arabic/English). It showcases my skills in web development and design, and it was one of my early projects in web development.
 
 ## Project Overview
 
