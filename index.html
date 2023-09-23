@@ -138,7 +138,10 @@
       v[1].style.display = "block";
       v[1].style.transform = "rotateY(180deg)";
       const vv = document.getElementsByTagName("body");
-      vv[0].style.backgroundImage = `url('../images/2ArabicMode.jpg')`;
+      vv[0].style.background = `url('../images/2ArabicMode.jpg')`;
+      vv[0].style.backgroundAttachment = "fixed";
+      vv[0].style.backgroundRepeat = "no-repeat";
+      vv[0].style.backgroundSize = "cover";
       vv[0].style.marginLeft = "0";
       vv[0].style.marginRight = "120px";
     }
@@ -148,7 +151,10 @@
       v[1].style.display = "none";
       v[1].style.transform = "rotateY(180deg)";
       const vv = document.getElementsByTagName("body");
-      vv[0].style.backgroundImage = `url('../images/1EnglishMode.jpg')`;
+      vv[0].style.background = `url('../images/1EnglishMode.jpg')`;
+      vv[0].style.backgroundAttachment = "fixed";
+      vv[0].style.backgroundRepeat = "no-repeat";
+      vv[0].style.backgroundSize = "cover";
       vv[0].style.marginLeft = "120px";
       vv[0].style.marginRight = "0";
     }
