@@ -10,7 +10,7 @@ This project is a simple implementation of converting a PSD design into a functi
 - **Project Name:** Music Landing Page
 - **Project Type:** PSD to HTML/CSS Conversion
 - **PSD Version:** [Design Template](https://www.freepik.com/free-psd/enjoy-music-landing-page_13762476.htm#query=landing%20page&position=3&from_view=search)
-- **Demo:** [View Live Demo](https://jamal-saadeddin.github.io/music/)
+- **Demo:** [View Live Demo](https://jamal-saadeddin.github.io/Music/)
 
 ## Description
 
